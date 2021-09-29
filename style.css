@@ -1,0 +1,64 @@
+html {
+  font-size: 20px;
+  color: red;
+}
+
+.parent {
+  font-size: 24px;
+}
+
+.child {
+  font-size: 1.5em;
+}
+
+.child-of-root {
+  font-size: 1.5rem;
+}
+
+.container {
+  border: 2px dotted blue;
+}
+
+.row {
+  border: 2px dotted red;
+  /* when setting height or width it's against the parent's dimensions */
+  width: 50%;
+  /*  height: 40%; */
+  /* When setting padding/margin is only against the width of the parent */
+  margin-left: 10%;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.first-child {
+  width: 50%;
+  border: 2px dotted hotpink;
+}
+
+img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner {
+  height: 400px;
+  background-image: url('https://www.sciencealert.com/images/2021-07/processed/CatWearingMedicalFaceMaskWhileSittingOnCouch_1024.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Small devices up to 768px */
+
+@media only screen and (max-width: 768px) {
+  html {
+    color: blue;
+  }
+
+  .banner {
+    height: 100px;
+  }
+}
